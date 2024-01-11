@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    a {
+      @apply text-blue-700
+    }
+  }
+
+  .active-btn-btnlist{
+    background:#efefef;
+    color: black;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 4px;
+    white-space: nowrap;
+  }
+
+  .btn-list{
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .ul-btnlist{
+    display: flex;
+  align-items: center;
+  list-style: none;
+  max-width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+  }
+
+  .scroller-btn-btnlist-lt{
+    border: 0;
+  color: #777;
+  font-size: 24px;
+  }
+
+  .scroller-btn-btnlist-rt{
+    border: 0;
+  color: #777;
+  font-size: 24px;
+  margin-right: 30px;
+  }
